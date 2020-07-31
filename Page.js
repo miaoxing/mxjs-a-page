@@ -1,6 +1,6 @@
 import React from 'react';
 import {Breadcrumb} from "@mxjs/bootstrap";
-import app from '@weijs/app';
+import app from '@mxjs/app';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Box} from 'rebass';
 import http from '@mxjs/http';
