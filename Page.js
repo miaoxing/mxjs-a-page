@@ -62,7 +62,7 @@ class Page extends React.Component {
         ))}
         {this.state.breadcrumb.length === 0 && <Breadcrumb.Item css={invisible()}>...</Breadcrumb.Item>}
       </Breadcrumb>
-    </Box>
+    </Box>;
   }
 
   render() {
@@ -77,4 +77,4 @@ class Page extends React.Component {
   }
 }
 
-export default Page
+export default Page;
