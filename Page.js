@@ -10,7 +10,7 @@ import '@mxjs/bootstrap-antd/Breadcrumb/style';
 class Page extends React.Component {
   static defaultProps = {
     breadcrumb: null,
-    raw: false
+    raw: false,
   };
 
   state = {
@@ -22,8 +22,8 @@ class Page extends React.Component {
       http.get('admin-page/breadcrumb', {
         params: {
           ctrl: app.namespace + '/' + app.controller,
-          act: app.action
-        }
+          act: app.action,
+        },
       })
         .then(ret => {
           if (ret.code !== 1) {
@@ -49,7 +49,7 @@ class Page extends React.Component {
         '.breadcrumb': {
           py: 3,
           pl: 4,
-        }
+        },
       }}
     >
       <Breadcrumb>
