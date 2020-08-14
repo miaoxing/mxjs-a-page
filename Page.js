@@ -1,5 +1,5 @@
 import React from 'react';
-import {Breadcrumb} from "@mxjs/bootstrap";
+import {Breadcrumb} from '@mxjs/bootstrap';
 import app from '@mxjs/app';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Box} from 'rebass';
@@ -67,15 +67,12 @@ class Page extends React.Component {
 
   render() {
     return (
-      <>
-        {this.renderBreadcrumb()}
-        <Box
+      <>'       '{this.renderBreadcrumb()}'       '<Box
           p={this.props.raw ? null : '4'}
           bg={this.props.raw ? null : 'white'}
         >
           {this.props.children}
-        </Box>
-      </>
+        </Box>'     '</>
     );
   }
 }
