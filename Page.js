@@ -67,12 +67,15 @@ class Page extends React.Component {
 
   render() {
     return (
-      <>'       '{this.renderBreadcrumb()}'       '<Box
+      <>
+        {this.renderBreadcrumb()}
+        <Box
           p={this.props.raw ? null : '4'}
           bg={this.props.raw ? null : 'white'}
         >
           {this.props.children}
-        </Box>'     '</>
+        </Box>
+      </>
     );
   }
 }
