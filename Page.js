@@ -1,6 +1,7 @@
+import $ from 'miaoxing';
 import React from 'react';
 import {Breadcrumb} from '@mxjs/bootstrap';
-import app, {Router} from '@mxjs/app';
+import {router} from '@mxjs/app';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Box} from 'rebass';
 import {invisible} from '@mxjs/css';
@@ -19,7 +20,7 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
 
-    this.router = new Router();
+    this.router = new router.constructor();
     this.router.setPages(miaoxing.pages);
   }
 
@@ -43,7 +44,7 @@ class Page extends React.Component {
 
       breadcrumb.push({
         name: next.name,
-        url: url.includes('[') ? null : app.url(url.substr(1)), // 移除 '/' 前缀
+        url: url.includes('[') ? null : $.url(url.substr(1)), // 移除 '/' 前缀
       });
     });
     return breadcrumb;
