@@ -7,7 +7,16 @@ import {Box} from 'rebass';
 import {invisible} from '@mxjs/css';
 import '@mxjs/bootstrap-antd/Breadcrumb/style';
 
+/**
+ * @experimental 考虑将后台的 Layout 合并进来
+ */
+export const PageContext = React.createContext({
+  pages: {}
+});
+
 class Page extends React.Component {
+  static contextType = PageContext;
+
   static defaultProps = {
     breadcrumb: null,
     raw: false,
@@ -21,10 +30,10 @@ class Page extends React.Component {
     super(props);
 
     this.router = new router.constructor();
-    this.router.setPages(miaoxing.pages);
   }
 
   getBreadcrumb() {
+    this.router.setPages(this.context.pages);
     const page = this.router.match(window.location.pathname);
     if (!page) {
       return [];
@@ -32,7 +41,7 @@ class Page extends React.Component {
 
     const breadcrumb = [];
     let url = '';
-    let next = miaoxing.pages;
+    let next = this.context.pages;
     page.paths.forEach(path => {
       url += path;
       next = next[path];

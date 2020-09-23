@@ -1,4 +1,4 @@
 import './style';
 
-export Page from './Page';
+export Page, {PageContext} from './Page';
 export PageActions from './PageActions';
