@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.0...v0.2.1) (2020-09-25)
+
+
+### Features
+
+* 增加 PageContext 以便外部提供 pages 值 ([8186263](https://github.com/miaoxing/mxjs-a-page/commit/8186263f0ae26acce3e02765aece3499901a3b29))
+
 # [0.2.0](https://github.com/miaoxing/mxjs-a-page/compare/v0.1.0...v0.2.0) (2020-09-01)
 
 
