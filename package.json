@@ -11,7 +11,9 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "index.js",
+    "Page.js",
+    "PageActions.js"
   ],
   "publishConfig": {
     "access": "public",
