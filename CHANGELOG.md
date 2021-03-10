@@ -1,3 +1,10 @@
+## [0.2.2](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.1...v0.2.2) (2021-03-10)
+
+
+### Bug Fixes
+
+* 指定要发布的文件 ([be29985](https://github.com/miaoxing/mxjs-a-page/commit/be29985824e1b603fc255a8543d07caf27ded3cf))
+
 ## [0.2.1](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.0...v0.2.1) (2020-09-25)
 
 
