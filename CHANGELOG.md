@@ -1,3 +1,19 @@
+## [0.2.3](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.2...v0.2.3) (2021-03-10)
+
+
+### Bug Fixes
+
+* npm 发布加上 style 目录 ([2e98216](https://github.com/miaoxing/mxjs-a-page/commit/2e98216e8d6c408d679009f04a2d26689df9059b))
+* 增加依赖 ([19a2fe9](https://github.com/miaoxing/mxjs-a-page/commit/19a2fe95f58700041789dbd7f61da459ebbef4d8))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/app:** upgrade from `0.2.6` to `0.2.7`
+
 ## [0.2.2](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.1...v0.2.2) (2021-03-10)
 
 
