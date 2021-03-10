@@ -11,6 +11,7 @@
     "test": "__tests__"
   },
   "files": [
+    "style",
     "index.js",
     "Page.js",
     "PageActions.js"
