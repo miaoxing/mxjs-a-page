@@ -1,3 +1,19 @@
+## [0.2.4](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.3...v0.2.4) (2021-03-12)
+
+
+### Bug Fixes
+
+* 更新前端包依赖 ([255c661](https://github.com/miaoxing/mxjs-a-page/commit/255c66129de798b904784c184ccd2cf3fa86da95))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/bootstrap:** upgrade from `0.1.2` to `0.1.3`
+* **@mxjs/app:** upgrade from `0.2.7` to `0.2.8`
+
 ## [0.2.3](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.2...v0.2.3) (2021-03-10)
 
 
