@@ -21,8 +21,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "@mxjs/bootstrap": "^0.1.2",
-    "@mxjs/app": "^0.2.7",
+    "@mxjs/app": "0.2.7",
+    "react-router-dom": "^5.2.0",
     "react-router-bootstrap": "^0.25.0",
     "rebass": "^4.0.7",
     "@mxjs/css": "^0.1.0",
