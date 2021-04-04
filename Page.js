@@ -3,7 +3,7 @@ import React from 'react';
 import {Breadcrumb} from '@mxjs/bootstrap';
 import {router} from '@mxjs/app';
 import {LinkContainer} from 'react-router-bootstrap';
-import {Box} from 'rebass';
+import {Box} from '@mxjs/box';
 import {invisible} from '@mxjs/css';
 import '@mxjs/bootstrap-antd/Breadcrumb/style';
 
