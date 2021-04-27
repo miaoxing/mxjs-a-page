@@ -1,3 +1,16 @@
+## [0.2.6](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.5...v0.2.6) (2021-04-27)
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/app:** upgrade from `0.2.9` to `0.3.0`
+* **@mxjs/box:** upgrade from `0.1.0` to `0.2.0`
+* **@mxjs/css:** upgrade from `0.1.0` to `0.2.0`
+* **@mxjs/actions:** upgrade from `0.1.0` to `0.1.1`
+
 ## [0.2.5](https://github.com/miaoxing/mxjs-a-page/compare/v0.2.4...v0.2.5) (2021-03-22)
 
 
