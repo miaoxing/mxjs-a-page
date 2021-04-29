@@ -41,5 +41,15 @@
   },
   "bugs": {
     "url": "https://github.com/twinh/miaoxing/issues"
+  },
+  "devDependencies": {
+    "@miaoxing/dev": "^6.4.0"
+  },
+  "jest": {
+    "preset": "jest-preset-miaoxing"
+  },
+  "ciDependencies": {
+    "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
+    "@miaoxing/dev": "miaoxing/dev"
   }
 }
