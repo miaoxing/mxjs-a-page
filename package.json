@@ -41,7 +41,8 @@
     "@mxjs/box": "^0.2.0",
     "@mxjs/css": "^0.2.0",
     "@mxjs/bootstrap-antd": "^0.1.1",
-    "@mxjs/actions": "^0.1.1"
+    "@mxjs/actions": "^0.1.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@miaoxing/dev": "^6.4.0",

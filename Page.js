@@ -5,13 +5,14 @@ import {router} from '@mxjs/app';
 import {LinkContainer} from 'react-router-bootstrap';
 import {Box} from '@mxjs/box';
 import {invisible} from '@mxjs/css';
+import PropTypes from 'prop-types';
 import '@mxjs/bootstrap-antd/Breadcrumb/style';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
  */
 export const PageContext = React.createContext({
-  pages: {}
+  pages: {},
 });
 
 class Page extends React.Component {
@@ -20,6 +21,12 @@ class Page extends React.Component {
   static defaultProps = {
     breadcrumb: null,
     raw: false,
+  };
+
+  static propTypes = {
+    breadcrumb: PropTypes.node,
+    raw: PropTypes.bool,
+    children: PropTypes.node,
   };
 
   state = {
@@ -86,7 +93,7 @@ class Page extends React.Component {
             <Breadcrumb.Item active={items.length === index + 1}>
               {item.name}
             </Breadcrumb.Item>
-          </Child>
+          </Child>;
         })}
         {this.state.breadcrumb.length === 0 && <Breadcrumb.Item css={invisible()}>...</Breadcrumb.Item>}
       </Breadcrumb>
