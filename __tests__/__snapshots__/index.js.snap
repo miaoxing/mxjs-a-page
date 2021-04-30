@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page basic 1`] = `
+<div>
+  <div
+    class="css-156ub72"
+  >
+    <nav
+      aria-label="breadcrumb"
+    >
+      <ol
+        class="breadcrumb"
+      >
+        <li
+          class="breadcrumb-item css-1ch7sjt-invisible"
+        >
+          <a
+            href="#"
+            role="button"
+          >
+            ...
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div
+    class="css-o1za7s"
+  />
+</div>
+`;
