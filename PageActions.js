@@ -1,6 +1,7 @@
 import React from 'react';
 import {Actions} from '@mxjs/actions';
 import PropTypes from 'prop-types';
+import {Box} from '@mxjs/box';
 
 export default class extends React.Component {
   static propTypes = {
@@ -8,12 +9,14 @@ export default class extends React.Component {
   };
 
   render() {
+    const {children, ...props} = this.props;
+
     return (
-      <div className="page-actions">
+      <Box className="page-actions" {...props}>
         <Actions>
-          {this.props.children}
+          {children}
         </Actions>
-      </div>
+      </Box>
     );
   }
 }
