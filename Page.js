@@ -58,6 +58,11 @@ class Page extends React.Component {
         return;
       }
 
+      // 忽略中间的空白路径
+      if (!next.name) {
+        return;
+      }
+
       breadcrumb.push({
         name: next.name,
         url: url.includes('[') ? null : $.url(url.substr(1)), // 移除 '/' 前缀
