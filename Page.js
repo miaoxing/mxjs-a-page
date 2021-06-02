@@ -101,12 +101,15 @@ class Page extends React.Component {
   }
 
   render() {
+    const {raw, ...props} = this.props;
+
     return (
       <>
         {this.renderBreadcrumb()}
         <Box
-          p={this.props.raw ? null : '4'}
-          bg={this.props.raw ? null : 'white'}
+          p={raw ? null : '4'}
+          bg={raw ? null : 'white'}
+          {...props}
         >
           {this.props.children}
         </Box>
