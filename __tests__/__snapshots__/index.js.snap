@@ -75,3 +75,33 @@ exports[`Page breadcrumb ignore empty path name 1`] = `
   />
 </div>
 `;
+
+exports[`Page page with css props 1`] = `
+<div>
+  <div
+    class="css-156ub72"
+  >
+    <nav
+      aria-label="breadcrumb"
+    >
+      <ol
+        class="breadcrumb"
+      >
+        <li
+          class="breadcrumb-item css-1ch7sjt-invisible"
+        >
+          <a
+            href="#"
+            role="button"
+          >
+            ...
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div
+    class="css-lbhnz5"
+  />
+</div>
+`;
