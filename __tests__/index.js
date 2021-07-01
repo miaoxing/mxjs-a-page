@@ -31,5 +31,11 @@ describe('Page', () => {
 
     resetUrl();
   });
+
+  test('page with css props', () => {
+    const {container} = render(<Page mb={2}/>);
+
+    expect(container).toMatchSnapshot();
+  });
 });
 
