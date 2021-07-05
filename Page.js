@@ -1,5 +1,5 @@
 import $ from 'miaoxing';
-import React from 'react';
+import { createContext, Fragment, Component } from 'react';
 import {Breadcrumb} from '@mxjs/bootstrap';
 import {router} from '@mxjs/app';
 import {LinkContainer} from 'react-router-bootstrap';
@@ -11,11 +11,11 @@ import '@mxjs/bootstrap-antd/Breadcrumb/style';
 /**
  * @experimental 考虑将后台的 Layout 合并进来
  */
-export const PageContext = React.createContext({
+export const PageContext = createContext({
   pages: {},
 });
 
-class Page extends React.Component {
+class Page extends Component {
   static contextType = PageContext;
 
   static defaultProps = {
@@ -82,27 +82,29 @@ class Page extends React.Component {
 
     const items = this.getBreadcrumb();
 
-    return <Box mt={-4} mx={-4} mb={4} bg="white"
-      sx={{
-        '.breadcrumb': {
-          py: 3,
-          pl: 4,
-        },
-      }}
-    >
-      <Breadcrumb>
-        {items.map((item, index) => {
-          const Child = item.url ? LinkContainer : React.Fragment;
-          const props = item.url ? {to: item.url} : {};
-          return <Child key={item.name} {...props}>
-            <Breadcrumb.Item active={items.length === index + 1}>
-              {item.name}
-            </Breadcrumb.Item>
-          </Child>;
-        })}
-        {this.state.breadcrumb.length === 0 && <Breadcrumb.Item css={invisible()}>...</Breadcrumb.Item>}
-      </Breadcrumb>
-    </Box>;
+    return (
+      <Box mt={-4} mx={-4} mb={4} bg="white"
+        sx={{
+          '.breadcrumb': {
+            py: 3,
+            pl: 4,
+          },
+        }}
+      >
+        <Breadcrumb>
+          {items.map((item, index) => {
+            const Child = item.url ? LinkContainer : Fragment;
+            const props = item.url ? {to: item.url} : {};
+            return <Child key={item.name} {...props}>
+              <Breadcrumb.Item active={items.length === index + 1}>
+                {item.name}
+              </Breadcrumb.Item>
+            </Child>;
+          })}
+          {this.state.breadcrumb.length === 0 && <Breadcrumb.Item css={invisible()}>...</Breadcrumb.Item>}
+        </Breadcrumb>
+      </Box>
+    );
   }
 
   render() {
