@@ -106,7 +106,7 @@ class Page extends React.Component {
   }
 
   render() {
-    const {raw, ...props} = this.props;
+    const {raw, breadcrumb, ...props} = this.props;
 
     return (
       <>
