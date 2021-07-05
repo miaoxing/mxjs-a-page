@@ -1,4 +1,3 @@
-import React from 'react';
 import {Page, PageContext} from '..';
 import {render} from '@testing-library/react';
 import {setUrl, resetUrl} from '@mxjs/test';
