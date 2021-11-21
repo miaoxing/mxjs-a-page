@@ -1,12 +1,10 @@
 import $ from 'miaoxing';
-import { createContext, Fragment, Component } from 'react';
-import {Breadcrumb} from '@mxjs/bootstrap';
+import { createContext, Component } from 'react';
 import {router} from '@mxjs/app';
-import {LinkContainer} from 'react-router-bootstrap';
 import {Box} from '@mxjs/box';
-import {invisible} from '@mxjs/css';
 import PropTypes from 'prop-types';
-import '@mxjs/bootstrap-antd/Breadcrumb/style';
+import {Link} from 'react-router-dom';
+import {Breadcrumb} from 'antd';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
@@ -85,23 +83,20 @@ class Page extends Component {
     return (
       <Box mt={-4} mx={-4} mb={4} bg="white"
         sx={{
-          '.breadcrumb': {
+          '.ant-breadcrumb': {
             py: 3,
             pl: 4,
+            // 异步加载时先占好位置
+            minHeight: 43,
           },
         }}
       >
         <Breadcrumb>
           {items.map((item, index) => {
-            const Child = item.url ? LinkContainer : Fragment;
-            const props = item.url ? {to: item.url} : {};
-            return <Child key={item.name} {...props}>
-              <Breadcrumb.Item active={items.length === index + 1}>
-                {item.name}
-              </Breadcrumb.Item>
-            </Child>;
+            return <Breadcrumb.Item key={item.name}>
+              {item.url ? <Link to={item.url}>{item.name}</Link> : item.name}
+            </Breadcrumb.Item>;
           })}
-          {this.state.breadcrumb.length === 0 && <Breadcrumb.Item css={invisible()}>...</Breadcrumb.Item>}
         </Breadcrumb>
       </Box>
     );
