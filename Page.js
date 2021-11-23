@@ -1,10 +1,11 @@
 import $ from 'miaoxing';
-import { createContext, Component } from 'react';
+import {createContext, Component} from 'react';
 import {router} from '@mxjs/app';
 import {Box} from '@mxjs/box';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Breadcrumb} from 'antd';
+import {createStyle} from '@fower/core';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
@@ -81,14 +82,9 @@ class Page extends Component {
     const items = this.getBreadcrumb();
 
     return (
-      <Box mt={-4} mx={-4} mb={4} bg="white"
-        sx={{
-          '.ant-breadcrumb': {
-            py: 3,
-            pl: 4,
-            // 异步加载时先占好位置
-            minHeight: 43,
-          },
+      <Box mt={-16} mx={-16} mb4 bgWhite
+        css={{
+          '.ant-breadcrumb': createStyle('py3', 'pl4', {minH: 46}), // 异步加载时先占好位置
         }}
       >
         <Breadcrumb>
@@ -109,7 +105,7 @@ class Page extends Component {
       <>
         {this.renderBreadcrumb()}
         <Box
-          p={raw ? null : '4'}
+          p4={!raw}
           bg={raw ? null : 'white'}
           {...props}
         >
