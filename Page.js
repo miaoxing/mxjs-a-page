@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Breadcrumb} from 'antd';
 import {createStyle} from '@fower/core';
+import {spacing} from '@mxjs/css';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
@@ -82,7 +83,7 @@ class Page extends Component {
     const items = this.getBreadcrumb();
 
     return (
-      <Box mt={-16} mx={-16} mb4 bgWhite
+      <Box mt={-spacing(4)} mx={-spacing(4)} mb4 bgWhite
         css={{
           '.ant-breadcrumb': createStyle('py3', 'pl4', {minH: 46}), // 异步加载时先占好位置
         }}
