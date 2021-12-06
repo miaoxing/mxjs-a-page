@@ -5,8 +5,7 @@ import {Box} from '@mxjs/box';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Breadcrumb} from 'antd';
-import {createStyle} from '@fower/core';
-import {spacing} from '@mxjs/css';
+import {spacing, createStyle} from '@mxjs/css';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
