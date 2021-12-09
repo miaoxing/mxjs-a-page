@@ -83,7 +83,7 @@ class Page extends Component {
 
     return (
       <Box mt={-spacing(4)} mx={-spacing(4)} mb4 bgWhite
-        css={{
+        sx={{
           '.ant-breadcrumb': createStyle('py3', 'pl4', {minH: 46}), // 异步加载时先占好位置
         }}
       >
