@@ -88,7 +88,7 @@ class Page extends Component {
         }}
       >
         <Breadcrumb>
-          {items.map((item, index) => {
+          {items.map((item) => {
             return <Breadcrumb.Item key={item.name}>
               {item.url ? <Link to={item.url}>{item.name}</Link> : item.name}
             </Breadcrumb.Item>;
