@@ -14,6 +14,10 @@ export const PageContext = createContext({
   pages: {},
 });
 
+const hasVar = (path) => {
+  return path.includes('[');
+};
+
 class Page extends Component {
   static contextType = PageContext;
 
@@ -53,7 +57,7 @@ class Page extends Component {
       next = next[path];
 
       // 忽略变量
-      if (path.includes('[')) {
+      if (hasVar(path)) {
         return;
       }
 
@@ -64,7 +68,7 @@ class Page extends Component {
 
       breadcrumb.push({
         name: next.name,
-        url: url.includes('[') ? null : $.url(url.substr(1)), // 移除 '/' 前缀
+        url: hasVar(url) ? null : $.url(url.substr(1)), // 移除 '/' 前缀
       });
     });
     return breadcrumb;
