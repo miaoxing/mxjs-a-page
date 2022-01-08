@@ -3,29 +3,15 @@
 exports[`Page basic 1`] = `
 <div>
   <div
-    class="css-156ub72"
+    class="mt--16 mx--16 mb-16 bgWhite"
+    sx="[object Object]"
   >
-    <nav
-      aria-label="breadcrumb"
-    >
-      <ol
-        class="breadcrumb"
-      >
-        <li
-          class="breadcrumb-item css-1ch7sjt-invisible"
-        >
-          <a
-            href="#"
-            role="button"
-          >
-            ...
-          </a>
-        </li>
-      </ol>
-    </nav>
+    <div
+      class="ant-breadcrumb"
+    />
   </div>
   <div
-    class="css-o1za7s"
+    class="p-16 bg-white"
   />
 </div>
 `;
@@ -33,45 +19,40 @@ exports[`Page basic 1`] = `
 exports[`Page breadcrumb ignore empty path name 1`] = `
 <div>
   <div
-    class="css-156ub72"
+    class="mt--16 mx--16 mb-16 bgWhite"
+    sx="[object Object]"
   >
-    <nav
-      aria-label="breadcrumb"
+    <div
+      class="ant-breadcrumb"
     >
-      <ol
-        class="breadcrumb"
-      >
-        <li
-          class="breadcrumb-item"
+      <span>
+        <span
+          class="ant-breadcrumb-link"
         >
-          <a
-            href="#"
-            role="button"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          aria-current="page"
-          class="breadcrumb-item active"
+          Home
+        </span>
+        <span
+          class="ant-breadcrumb-separator"
+        >
+          /
+        </span>
+      </span>
+      <span>
+        <span
+          class="ant-breadcrumb-link"
         >
           Child Page
-        </li>
-        <li
-          class="breadcrumb-item css-1ch7sjt-invisible"
+        </span>
+        <span
+          class="ant-breadcrumb-separator"
         >
-          <a
-            href="#"
-            role="button"
-          >
-            ...
-          </a>
-        </li>
-      </ol>
-    </nav>
+          /
+        </span>
+      </span>
+    </div>
   </div>
   <div
-    class="css-o1za7s"
+    class="p-16 bg-white"
   />
 </div>
 `;
@@ -79,29 +60,15 @@ exports[`Page breadcrumb ignore empty path name 1`] = `
 exports[`Page page with css props 1`] = `
 <div>
   <div
-    class="css-156ub72"
+    class="mt--16 mx--16 mb-16 bgWhite"
+    sx="[object Object]"
   >
-    <nav
-      aria-label="breadcrumb"
-    >
-      <ol
-        class="breadcrumb"
-      >
-        <li
-          class="breadcrumb-item css-1ch7sjt-invisible"
-        >
-          <a
-            href="#"
-            role="button"
-          >
-            ...
-          </a>
-        </li>
-      </ol>
-    </nav>
+    <div
+      class="ant-breadcrumb"
+    />
   </div>
   <div
-    class="css-lbhnz5"
+    class="p-16 bg-white mb-2"
   />
 </div>
 `;
