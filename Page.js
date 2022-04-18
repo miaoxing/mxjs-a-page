@@ -68,10 +68,19 @@ class Page extends Component {
 
       breadcrumb.push({
         name: next.name,
-        url: hasVar(url) ? null : $.url(url.substr(1)), // 移除 '/' 前缀
+        url: this.getUrl(next, url),
       });
     });
     return breadcrumb;
+  }
+
+  getUrl(next, url) {
+    // 允许不显示地址
+    if (typeof next.url !== 'undefined' && !next.url) {
+      return null;
+    }
+
+    return hasVar(url) ? null : $.url(url.substr(1)); // 移除 '/' 前缀
   }
 
   renderBreadcrumb() {
