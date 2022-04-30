@@ -1,3 +1,10 @@
+## [0.3.5](https://github.com/miaoxing/mxjs-a-page/compare/v0.3.4...v0.3.5) (2022-04-30)
+
+
+### Features
+
+* 允许设置路径的 `url` 为 false 来不显示面包屑地址 ([8b95932](https://github.com/miaoxing/mxjs-a-page/commit/8b959325e60ef7fd19052ef548ccbd4906b0de32))
+
 ## [0.3.4](https://github.com/miaoxing/mxjs-a-page/compare/v0.3.3...v0.3.4) (2022-03-31)
 
 
