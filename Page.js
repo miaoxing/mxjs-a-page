@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Breadcrumb} from 'antd';
 import {spacing, createStyle} from '@mxjs/css';
+import {withRouter} from 'react-router';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
@@ -18,6 +19,7 @@ const hasVar = (path) => {
   return path.includes('[');
 };
 
+@withRouter
 class Page extends Component {
   static contextType = PageContext;
 
@@ -44,7 +46,7 @@ class Page extends Component {
 
   getBreadcrumb() {
     this.router.setPages(this.context.pages);
-    const page = this.router.match(window.location.pathname);
+    const page = this.router.match(this.props.location.pathname);
     if (!page) {
       return [];
     }
@@ -112,7 +114,7 @@ class Page extends Component {
   }
 
   render() {
-    const {raw, breadcrumb, ...props} = this.props;
+    const {raw, breadcrumb, location, history, match, ...props} = this.props;
 
     return (
       <>
