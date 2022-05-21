@@ -1,22 +1,19 @@
-import { Component } from 'react';
 import {Actions} from '@mxjs/actions';
 import PropTypes from 'prop-types';
 import {Box} from '@mxjs/box';
 
-export default class extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-  };
+const PageAction = ({children, ...props}) => {
+  return (
+    <Box className="page-actions" {...props}>
+      <Actions>
+        {children}
+      </Actions>
+    </Box>
+  );
+};
 
-  render() {
-    const {children, ...props} = this.props;
+PageAction.propTypes = {
+  children: PropTypes.node,
+};
 
-    return (
-      <Box className="page-actions" {...props}>
-        <Actions>
-          {children}
-        </Actions>
-      </Box>
-    );
-  }
-}
+export default PageAction;
