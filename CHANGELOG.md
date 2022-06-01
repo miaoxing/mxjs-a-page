@@ -1,3 +1,24 @@
+## [0.3.6](https://github.com/miaoxing/mxjs-a-page/compare/v0.3.5...v0.3.6) (2022-06-01)
+
+
+### Features
+
+* **a-page:** 面包屑导航支持 `hash` 路由器模式 ([0bc58f0](https://github.com/miaoxing/mxjs-a-page/commit/0bc58f035dd271459432ccaaf3918642f866018a))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.1` to `0.4.2`
+* **@mxjs/app:** upgrade from `0.4.3` to `0.5.0`
+* **@mxjs/box:** upgrade from `0.3.2` to `0.3.3`
+* **@mxjs/css:** upgrade from `0.3.2` to `0.3.3`
+* **@mxjs/actions:** upgrade from `0.2.2` to `0.2.3`
+* **@miaoxing/dev:** upgrade from `8.1.0` to `8.1.1`
+* **@mxjs/test:** upgrade from `0.2.4` to `0.2.5`
+
 ## [0.3.5](https://github.com/miaoxing/mxjs-a-page/compare/v0.3.4...v0.3.5) (2022-04-30)
 
 
