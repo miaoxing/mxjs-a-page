@@ -32,6 +32,9 @@ class Page extends Component {
     breadcrumb: PropTypes.node,
     raw: PropTypes.bool,
     children: PropTypes.node,
+    location: PropTypes.object,
+    history: PropTypes.object,
+    match: PropTypes.object,
   };
 
   state = {
