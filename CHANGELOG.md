@@ -1,3 +1,14 @@
+## [0.3.7](https://github.com/miaoxing/mxjs-a-page/compare/v0.3.6...v0.3.7) (2022-06-06)
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/app:** upgrade from `0.5.0` to `0.5.1`
+* **@mxjs/test:** upgrade from `0.2.5` to `0.2.6`
+
 ## [0.3.6](https://github.com/miaoxing/mxjs-a-page/compare/v0.3.5...v0.3.6) (2022-06-01)
 
 
