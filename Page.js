@@ -1,5 +1,5 @@
 import $ from 'miaoxing';
-import {createContext, Component} from 'react';
+import {createContext, Component, useContext} from 'react';
 import {router} from '@mxjs/app';
 import {Box} from '@mxjs/box';
 import PropTypes from 'prop-types';
@@ -14,6 +14,11 @@ import {withRouter} from 'react-router';
 export const PageContext = createContext({
   pages: {},
 });
+
+/**
+ * @experimental
+ */
+export const usePageContext = () => useContext(PageContext);
 
 const hasVar = (path) => {
   return path.includes('[');
