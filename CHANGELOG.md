@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/miaoxing/mxjs-a-page/compare/v1.0.1...v1.1.0) (2022-09-30)
+
+
+### Features
+
+* **a-page, experimental:** 增加 `usePageContext` 方法 ([bf55d22](https://github.com/miaoxing/mxjs-a-page/commit/bf55d220f134fdf4bd882e3d6c156151c095941d))
+
 ## [1.0.1](https://github.com/miaoxing/mxjs-a-page/compare/v1.0.0...v1.0.1) (2022-08-02)
 
 
