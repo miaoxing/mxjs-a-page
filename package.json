@@ -10,12 +10,6 @@
     "lib": "lib",
     "test": "__tests__"
   },
-  "files": [
-    "style",
-    "index.js",
-    "Page.js",
-    "PageActions.js"
-  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
