@@ -6,9 +6,11 @@ exports[`Page basic 1`] = `
     class="mt--16 mx--16 mb-16 bgWhite"
     sx="[object Object]"
   >
-    <div
+    <nav
       class="ant-breadcrumb"
-    />
+    >
+      <ol />
+    </nav>
   </div>
   <div
     class="p-16 bg-white"
@@ -22,34 +24,36 @@ exports[`Page breadcrumb ignore empty path name 1`] = `
     class="mt--16 mx--16 mb-16 bgWhite"
     sx="[object Object]"
   >
-    <div
+    <nav
       class="ant-breadcrumb"
     >
-      <span>
-        <span
-          class="ant-breadcrumb-link"
-        >
-          Home
-        </span>
-        <span
-          class="ant-breadcrumb-separator"
-        >
-          /
-        </span>
-      </span>
-      <span>
-        <span
-          class="ant-breadcrumb-link"
-        >
-          Child Page
-        </span>
-        <span
-          class="ant-breadcrumb-separator"
-        >
-          /
-        </span>
-      </span>
-    </div>
+      <ol>
+        <li>
+          <span
+            class="ant-breadcrumb-link"
+          >
+            Home
+          </span>
+          <span
+            class="ant-breadcrumb-separator"
+          >
+            /
+          </span>
+        </li>
+        <li>
+          <span
+            class="ant-breadcrumb-link"
+          >
+            Child Page
+          </span>
+          <span
+            class="ant-breadcrumb-separator"
+          >
+            /
+          </span>
+        </li>
+      </ol>
+    </nav>
   </div>
   <div
     class="p-16 bg-white"
@@ -63,9 +67,11 @@ exports[`Page page with css props 1`] = `
     class="mt--16 mx--16 mb-16 bgWhite"
     sx="[object Object]"
   >
-    <div
+    <nav
       class="ant-breadcrumb"
-    />
+    >
+      <ol />
+    </nav>
   </div>
   <div
     class="p-16 bg-white mb-2"
