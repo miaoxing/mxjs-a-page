@@ -1,3 +1,13 @@
+## [1.1.3](https://github.com/miaoxing/mxjs-a-page/compare/v1.1.2...v1.1.3) (2023-01-31)
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/actions:** upgrade from `0.2.6` to `0.2.7`
+
 ## [1.1.2](https://github.com/miaoxing/mxjs-a-page/compare/v1.1.1...v1.1.2) (2023-01-01)
 
 
