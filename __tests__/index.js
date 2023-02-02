@@ -1,6 +1,9 @@
 import {Page, PageContext} from '..';
 import {render} from '@testing-library/react';
 import {MemoryRouter} from 'react-router';
+import {bootstrap} from '@mxjs/test';
+
+bootstrap();
 
 describe('Page', () => {
   test('basic', () => {
@@ -10,21 +13,23 @@ describe('Page', () => {
     expect(result.container).toMatchSnapshot();
   });
 
-  test('breadcrumb ignore empty path name', () => {
+  test('breadcrumb match menu', () => {
     const result = render(<MemoryRouter
       initialEntries={['/admin/test/child']}
     >
       <PageContext.Provider value={{
-        pages: {
-          '/admin': {
-            name: 'Home',
-            '/test': {
-              '/child': {
-                name: 'Child Page',
+        menus: [
+          {
+            url: 'admin/test',
+            label: 'Test Page',
+            children: [
+              {
+                url: 'admin/test/child',
+                label: 'Child Page',
               },
-            },
+            ],
           },
-        },
+        ],
       }}>
         <Page/>
       </PageContext.Provider>

@@ -1,18 +1,18 @@
 import $ from 'miaoxing';
 import {createContext, Component, useContext} from 'react';
-import {router} from '@mxjs/app';
 import {Box} from '@mxjs/box';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import {Breadcrumb} from 'antd';
 import {spacing, createStyle} from '@mxjs/css';
 import {withRouter} from 'react-router';
+import {matchMenus} from './menus';
 
 /**
  * @experimental 考虑将后台的 Layout 合并进来
  */
 export const PageContext = createContext({
-  pages: {},
+  menus: [],
 });
 
 /**
@@ -42,55 +42,30 @@ class Page extends Component {
     match: PropTypes.object,
   };
 
-  state = {
-    breadcrumb: [],
-  };
-
-  constructor(props) {
-    super(props);
-
-    this.router = new router.constructor();
-  }
-
   getBreadcrumb() {
-    this.router.setPages(this.context.pages);
-    const page = this.router.match(this.props.location.pathname);
-    if (!page) {
-      return [];
-    }
-
-    const breadcrumb = [];
-    let url = '';
-    let next = this.context.pages;
-    page.paths.forEach(path => {
-      url += path;
-      next = next[path];
-
-      // 忽略变量
-      if (hasVar(path)) {
-        return;
-      }
-
-      // 忽略中间的空白路径
-      if (!next.name) {
-        return;
-      }
-
-      breadcrumb.push({
-        name: next.name,
-        url: this.getUrl(next, url),
+    const pathname = this.props.history.location.pathname.replace(/\/+$/, '');
+    const menus = matchMenus(pathname, this.context.menus);
+    if (this.context.menus.length) {
+      menus.unshift({
+        label: '首页',
+        url: 'admin',
       });
+    }
+    return menus.map(menu => {
+      return {
+        label: menu.label,
+        url: this.getUrl(menu),
+      };
     });
-    return breadcrumb;
   }
 
-  getUrl(next, url) {
+  getUrl(menu) {
     // 允许不显示地址
-    if (typeof next.url !== 'undefined' && !next.url) {
+    if (typeof menu.url !== 'undefined' && !menu.url) {
       return null;
     }
 
-    return hasVar(url) ? null : $.url(url.substr(1)); // 移除 '/' 前缀
+    return hasVar(menu.url) ? null : $.url(menu.url);
   }
 
   renderBreadcrumb() {
@@ -112,8 +87,8 @@ class Page extends Component {
       >
         <Breadcrumb>
           {items.map((item) => {
-            return <Breadcrumb.Item key={item.name}>
-              {item.url ? <Link to={item.url}>{item.name}</Link> : item.name}
+            return <Breadcrumb.Item key={item.label}>
+              {item.url ? <Link to={item.url}>{item.label}</Link> : item.label}
             </Breadcrumb.Item>;
           })}
         </Breadcrumb>
