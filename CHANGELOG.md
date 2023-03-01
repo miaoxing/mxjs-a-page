@@ -1,3 +1,23 @@
+# [2.0.0](https://github.com/miaoxing/mxjs-a-page/compare/v1.1.3...v2.0.0) (2023-03-01)
+
+
+### Code Refactoring
+
+* **a-page:** 改为读取菜单来展示面包屑 ([9351a6d](https://github.com/miaoxing/mxjs-a-page/commit/9351a6d6e649f795890286d85ed9ccda6ece4ca5))
+
+
+### BREAKING CHANGES
+
+* **a-page:** 改为读取菜单来展示面包屑
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/actions:** upgrade from `0.2.7` to `0.2.8`
+
 ## [1.1.3](https://github.com/miaoxing/mxjs-a-page/compare/v1.1.2...v1.1.3) (2023-01-31)
 
 
