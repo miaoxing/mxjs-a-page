@@ -1,5 +1,6 @@
 import './style';
 
-export Page, {PageContext} from './Page';
+export Page from './Page';
+export PageContext from './PageContext';
 export PageActions from './PageActions';
 export {matchMenus} from './menus';
