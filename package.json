@@ -27,6 +27,7 @@
   "dependencies": {
     "miaoxing": "^0.4.6",
     "@mxjs/app": "^0.5.4",
+    "@mxjs/auth": "^1.0.0",
     "react-router-dom": "^5.2.0",
     "@mxjs/box": "^0.3.6",
     "@mxjs/css": "^1.1.0",
