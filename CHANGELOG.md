@@ -1,3 +1,19 @@
+# [2.1.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.0.0...v2.1.0) (2023-04-15)
+
+
+### Features
+
+* **a-page, experimental:** `PageActions` 无内容时不展示 ([061d240](https://github.com/miaoxing/mxjs-a-page/commit/061d240c36dcc8f5b3a27b616c7b1beb3c6dd4db))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/auth:** upgrade from `1.0.0` to `1.1.0`
+* **@mxjs/actions:** upgrade from `0.2.8` to `0.2.9`
+
 # [2.0.0](https://github.com/miaoxing/mxjs-a-page/compare/v1.1.3...v2.0.0) (2023-03-01)
 
 
