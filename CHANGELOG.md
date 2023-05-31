@@ -1,3 +1,20 @@
+## [2.1.2](https://github.com/miaoxing/mxjs-a-page/compare/v2.1.1...v2.1.2) (2023-05-31)
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.6` to `0.4.7`
+* **@mxjs/app:** upgrade from `0.5.4` to `0.5.5`
+* **@mxjs/auth:** upgrade from `1.1.1` to `1.1.2`
+* **@mxjs/box:** upgrade from `0.3.6` to `0.3.7`
+* **@mxjs/css:** upgrade from `1.1.0` to `1.1.1`
+* **@mxjs/actions:** upgrade from `0.2.10` to `0.2.11`
+* **@miaoxing/dev:** upgrade from `8.2.0` to `8.2.1`
+* **@mxjs/test:** upgrade from `1.0.3` to `1.0.4`
+
 ## [2.1.1](https://github.com/miaoxing/mxjs-a-page/compare/v2.1.0...v2.1.1) (2023-04-18)
 
 
