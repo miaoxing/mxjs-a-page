@@ -13,7 +13,7 @@ exports[`Page basic 1`] = `
     </nav>
   </div>
   <div
-    class="p-16 bg-white"
+    class="p-16 bg-white rounded-8"
   />
 </div>
 `;
@@ -80,7 +80,7 @@ exports[`Page breadcrumb match menu 1`] = `
     </nav>
   </div>
   <div
-    class="p-16 bg-white"
+    class="p-16 bg-white rounded-8"
   />
 </div>
 `;
@@ -98,7 +98,7 @@ exports[`Page page with css props 1`] = `
     </nav>
   </div>
   <div
-    class="p-16 bg-white mb-2"
+    class="p-16 bg-white rounded-8 mb-2"
   />
 </div>
 `;

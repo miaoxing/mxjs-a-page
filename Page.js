@@ -1,7 +1,7 @@
 import $ from 'miaoxing';
 import {useState, useEffect} from 'react';
 import {Box} from '@mxjs/box';
-import {Breadcrumb as AntdBreadcrumb} from 'antd';
+import {Breadcrumb as AntdBreadcrumb, theme} from 'antd';
 import {spacing, createStyle} from '@mxjs/css';
 import {useLocation, Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -73,12 +73,15 @@ const Breadcrumb = () => {
 };
 
 const Page = ({raw, breadcrumb, ...props}) => {
+  const {token} = theme.useToken();
+
   return (
     <>
       {renderBreadcrumb(breadcrumb)}
       <Box
         p4={!raw}
         bg={raw ? null : 'white'}
+        rounded={token.borderRadiusLG}
         {...props}
       >
         {props.children}
