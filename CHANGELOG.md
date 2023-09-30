@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.1.5...v2.2.0) (2023-09-30)
+
+
+### Features
+
+* **a-page:** `Page` 增加主题的圆角 ([4d5d197](https://github.com/miaoxing/mxjs-a-page/commit/4d5d197ac680d224e844f8fa874daf97df1ef0dd))
+
 ## [2.1.5](https://github.com/miaoxing/mxjs-a-page/compare/v2.1.4...v2.1.5) (2023-09-02)
 
 
