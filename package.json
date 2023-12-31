@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-page",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/miaoxing/miaoxing#readme",
@@ -25,19 +25,19 @@
     "url": "https://github.com/miaoxing/miaoxing/issues"
   },
   "dependencies": {
-    "miaoxing": "^0.4.10",
-    "@mxjs/app": "^0.6.3",
-    "@mxjs/auth": "^1.1.5",
+    "miaoxing": "^0.4.11",
+    "@mxjs/app": "^0.6.4",
+    "@mxjs/auth": "^1.1.6",
     "react-router-dom": "^5.2.0",
-    "@mxjs/box": "^0.3.10",
-    "@mxjs/css": "^1.1.4",
-    "@mxjs/actions": "^0.2.14",
+    "@mxjs/box": "^0.3.11",
+    "@mxjs/css": "^1.1.5",
+    "@mxjs/actions": "^0.2.15",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@miaoxing/dev": "^8.2.4",
+    "@miaoxing/dev": "^9.0.0",
     "@testing-library/react": "^11.2.6",
-    "@mxjs/test": "^1.0.8",
+    "@mxjs/test": "^1.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
