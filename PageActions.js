@@ -1,6 +1,6 @@
-import {Actions} from '@mxjs/actions';
+import { Actions } from '@mxjs/actions';
 import PropTypes from 'prop-types';
-import {Box} from '@mxjs/box';
+import { Box } from '@mxjs/a-box';
 
 const PageAction = ({children, ...props}) => {
   return (

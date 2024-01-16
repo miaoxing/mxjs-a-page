@@ -29,8 +29,7 @@
     "@mxjs/app": "^0.6.5",
     "@mxjs/auth": "^1.1.7",
     "react-router-dom": "^5.2.0",
-    "@mxjs/box": "^0.3.12",
-    "@mxjs/css": "^1.1.6",
+    "@mxjs/a-box": "^1.0.0",
     "@mxjs/actions": "^0.2.16",
     "prop-types": "^15.7.2"
   },
@@ -52,7 +51,6 @@
     "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
     "jest-preset-miaoxing": "miaoxing/jest-preset-miaoxing",
     "@miaoxing/dev": "miaoxing/dev",
-    "@mxjs/box": "miaoxing/mxjs-box",
-    "@mxjs/css": "miaoxing/mxjs-css"
+    "@mxjs/a-box": "miaoxing/mxjs-a-box"
   }
 }

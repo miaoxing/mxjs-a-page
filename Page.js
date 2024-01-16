@@ -1,8 +1,7 @@
 import $ from 'miaoxing';
 import {useState, useEffect} from 'react';
-import {Box} from '@mxjs/box';
-import {Breadcrumb as AntdBreadcrumb, theme} from 'antd';
-import {spacing, createStyle} from '@mxjs/css';
+import { Box } from '@chakra-ui/react';
+import {Breadcrumb as AntdBreadcrumb} from 'antd';
 import {useLocation, Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {usePageContext} from './PageContext';
@@ -56,32 +55,27 @@ const Breadcrumb = () => {
   }, [page.menus.length]);
 
   return (
-    <Box mt={-spacing(4)} mx={-spacing(4)} mb4 bgWhite
-      sx={{
-        '.ant-breadcrumb': createStyle('py3', 'pl4', {minH: 46}), // 异步加载时先占好位置
-      }}
-    >
-      <AntdBreadcrumb>
+    <Box mt={-4} mx={-4} mb={4} bg="white">
+      {/* 异步加载时先占好位置 */}
+      <Box as={AntdBreadcrumb} py={3} pl={4} minH="46px">
         {items.map((item) => {
           return <AntdBreadcrumb.Item key={item.label}>
             {item.url ? <Link to={item.url}>{item.label}</Link> : item.label}
           </AntdBreadcrumb.Item>;
         })}
-      </AntdBreadcrumb>
+      </Box>
     </Box>
   );
 };
 
 const Page = ({raw, breadcrumb, ...props}) => {
-  const {token} = theme.useToken();
-
   return (
     <>
       {renderBreadcrumb(breadcrumb)}
       <Box
-        p4={!raw}
+        p={raw ? 0 : 4}
         bg={raw ? null : 'white'}
-        rounded={token.borderRadiusLG}
+        rounded="lg"
         {...props}
       >
         {props.children}
