@@ -55,7 +55,7 @@ const Breadcrumb = () => {
   }, [page.menus.length]);
 
   return (
-    <Box mt={-4} mx={-4} mb={4} bg="white">
+    <Box mt={-4} mx={-4}>
       {/* 异步加载时先占好位置 */}
       <Box as={AntdBreadcrumb} py={3} pl={4} minH="46px">
         {items.map((item) => {
