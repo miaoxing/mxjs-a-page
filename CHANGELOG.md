@@ -1,3 +1,22 @@
+# [2.3.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.2.3...v2.3.0) (2024-01-31)
+
+
+### Features
+
+* **a-page:** `Page` 组件子元素增加默认 gap ([6ff2ac7](https://github.com/miaoxing/mxjs-a-page/commit/6ff2ac707ba3397e5dcac152ee84ef803df0a88c))
+* **a-page:** 简化 `Breadcrumb`，移除背景色和下边距 ([2e11298](https://github.com/miaoxing/mxjs-a-page/commit/2e11298fc71c994a6543335fb1c16f63a0a7afe4))
+* 更新 `react` 支持 18 ([c8d12f2](https://github.com/miaoxing/mxjs-a-page/commit/c8d12f2314cdccce9191ca25b2ee9e9291ce1540))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/auth:** upgrade from `1.1.7` to `1.2.0`
+* **@mxjs/a-box:** upgrade from `1.0.0` to `1.1.0`
+* **@mxjs/actions:** upgrade from `0.2.16` to `0.2.17`
+
 ## [2.2.3](https://github.com/miaoxing/mxjs-a-page/compare/v2.2.2...v2.2.3) (2024-01-08)
 
 
