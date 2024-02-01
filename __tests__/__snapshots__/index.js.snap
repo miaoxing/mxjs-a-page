@@ -3,31 +3,32 @@
 exports[`Page basic 1`] = `
 <div>
   <div
-    class="mt--16 mx--16 mb-16 bgWhite"
-    sx="[object Object]"
+    class="css-1tp04pv"
   >
     <nav
-      class="ant-breadcrumb"
+      class="ant-breadcrumb css-yc5e1l"
     >
-      <ol />
+      <ol>
+         
+      </ol>
     </nav>
+    <div
+      class="css-t54a73"
+    />
   </div>
-  <div
-    class="p-16 bg-white rounded-8"
-  />
 </div>
 `;
 
 exports[`Page breadcrumb match menu 1`] = `
 <div>
   <div
-    class="mt--16 mx--16 mb-16 bgWhite"
-    sx="[object Object]"
+    class="css-1tp04pv"
   >
     <nav
-      class="ant-breadcrumb"
+      class="ant-breadcrumb css-yc5e1l"
     >
       <ol>
+         
         <li>
           <span
             class="ant-breadcrumb-link"
@@ -78,27 +79,28 @@ exports[`Page breadcrumb match menu 1`] = `
         </li>
       </ol>
     </nav>
+    <div
+      class="css-t54a73"
+    />
   </div>
-  <div
-    class="p-16 bg-white rounded-8"
-  />
 </div>
 `;
 
 exports[`Page page with css props 1`] = `
 <div>
   <div
-    class="mt--16 mx--16 mb-16 bgWhite"
-    sx="[object Object]"
+    class="css-1tp04pv"
   >
     <nav
-      class="ant-breadcrumb"
+      class="ant-breadcrumb css-yc5e1l"
     >
-      <ol />
+      <ol>
+         
+      </ol>
     </nav>
+    <div
+      class="css-x5jnlo"
+    />
   </div>
-  <div
-    class="p-16 bg-white rounded-8 mb-2"
-  />
 </div>
 `;
