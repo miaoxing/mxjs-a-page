@@ -1,16 +1,25 @@
 import PropTypes from 'prop-types';
 import { Box } from '@mxjs/a-box';
 
-const PageAction = ({children, ...props}) => {
+const PageActions = ({children, ...props}) => {
   return (
-    <Box className="page-actions" display="flex" gap={2} {...props}>
+    <Box
+      mb={4} pb={4} borderBottom="1px dotted" borderColor="gray.200" display="flex" gap={2}
+      sx={{
+        // @experimental
+        '&:empty': {
+          display: 'none',
+        },
+      }}
+      {...props}
+    >
       {children}
     </Box>
   );
 };
 
-PageAction.propTypes = {
+PageActions.propTypes = {
   children: PropTypes.node,
 };
 
-export default PageAction;
+export default PageActions;
