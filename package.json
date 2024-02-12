@@ -30,7 +30,6 @@
     "@mxjs/auth": "^1.2.0",
     "react-router-dom": "^5.2.0",
     "@mxjs/a-box": "^1.1.0",
-    "@mxjs/actions": "^0.2.17",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
