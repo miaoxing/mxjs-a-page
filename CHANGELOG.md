@@ -1,3 +1,11 @@
+# [2.4.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.3.0...v2.4.0) (2024-02-20)
+
+
+### Features
+
+* **a-page:** 使用 `Box` 组件替代 scss ([273df71](https://github.com/miaoxing/mxjs-a-page/commit/273df71c32c5a8097f5deb993b09bd9464e153ac))
+* **a-page:** 使用 `CSS` `gap` 替代 `Actions` 组件 ([333fb7c](https://github.com/miaoxing/mxjs-a-page/commit/333fb7c270719b9a12dd6672d2d3955b01e7f7f0))
+
 # [2.3.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.2.3...v2.3.0) (2024-01-31)
 
 
