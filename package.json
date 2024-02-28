@@ -25,6 +25,7 @@
     "url": "https://github.com/miaoxing/miaoxing/issues"
   },
   "dependencies": {
+    "antd": "~5.13",
     "miaoxing": "^0.4.12",
     "@mxjs/app": "^0.6.5",
     "@mxjs/auth": "^1.2.0",
