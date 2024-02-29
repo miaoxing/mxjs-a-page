@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/miaoxing/mxjs-a-page/compare/v2.4.0...v2.4.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* **a-page:** 增加 `antd` 依赖 ([f24b7c2](https://github.com/miaoxing/mxjs-a-page/commit/f24b7c25044c885e00d903d62dcdbc0b84faabc4))
+
 # [2.4.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.3.0...v2.4.0) (2024-02-20)
 
 
