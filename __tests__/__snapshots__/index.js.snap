@@ -8,9 +8,7 @@ exports[`Page basic 1`] = `
     <nav
       class="ant-breadcrumb css-yc5e1l"
     >
-      <ol>
-         
-      </ol>
+      <ol />
     </nav>
     <div
       class="css-t54a73"
@@ -28,17 +26,12 @@ exports[`Page breadcrumb match menu 1`] = `
       class="ant-breadcrumb css-yc5e1l"
     >
       <ol>
-         
         <li>
-          <span
-            class="ant-breadcrumb-link"
+          <a
+            href="/admin"
           >
-            <a
-              href="/admin"
-            >
-              首页
-            </a>
-          </span>
+            首页
+          </a>
         </li>
         <li
           aria-hidden="true"
@@ -47,15 +40,11 @@ exports[`Page breadcrumb match menu 1`] = `
           /
         </li>
         <li>
-          <span
-            class="ant-breadcrumb-link"
+          <a
+            href="/admin/test"
           >
-            <a
-              href="/admin/test"
-            >
-              Test Page
-            </a>
-          </span>
+            Test Page
+          </a>
         </li>
         <li
           aria-hidden="true"
@@ -64,15 +53,7 @@ exports[`Page breadcrumb match menu 1`] = `
           /
         </li>
         <li>
-          <span
-            class="ant-breadcrumb-link"
-          >
-            <a
-              href="/admin/test/child"
-            >
-              Child Page
-            </a>
-          </span>
+          Child Page
         </li>
       </ol>
     </nav>
@@ -91,9 +72,7 @@ exports[`Page page with css props 1`] = `
     <nav
       class="ant-breadcrumb css-yc5e1l"
     >
-      <ol>
-         
-      </ol>
+      <ol />
     </nav>
     <div
       class="css-x5jnlo"

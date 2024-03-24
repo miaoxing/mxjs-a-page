@@ -32,6 +32,11 @@ const renderBreadcrumb = (breadcrumb) => {
   return <Breadcrumb/>;
 };
 
+function itemRender(item, params, items) {
+  const last = items.indexOf(item) === items.length - 1;
+  return (item.href && !last) ? <Link to={item.href}>{item.title}</Link> : item.title;
+}
+
 const Breadcrumb = () => {
   const [items, setItems] = useState([]);
   const page = usePageContext();
@@ -48,20 +53,15 @@ const Breadcrumb = () => {
     }
     setItems(menus.map(menu => {
       return {
-        label: menu.label,
-        url: getUrl(menu),
+        title: menu.label,
+        href: getUrl(menu),
       };
     }));
   }, [page.menus.length]);
 
+  // 异步加载时先占好位置
   return (
-    <Box as={AntdBreadcrumb} minH="22px"> {/* 异步加载时先占好位置 */}
-      {items.map((item) => {
-        return <AntdBreadcrumb.Item key={item.label}>
-          {item.url ? <Link to={item.url}>{item.label}</Link> : item.label}
-        </AntdBreadcrumb.Item>;
-      })}
-    </Box>
+    <Box as={AntdBreadcrumb} items={items} itemRender={itemRender} minH="22px"/>
   );
 };
 
