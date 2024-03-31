@@ -1,3 +1,23 @@
+# [2.5.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.4.1...v2.5.0) (2024-03-31)
+
+
+### Features
+
+* **a-page:** 升级 `Breadcrumb` 使用 `items` 属性 ([f4094b0](https://github.com/miaoxing/mxjs-a-page/commit/f4094b0b6b896b7c449f0caa569c403490dea378))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.12` to `0.4.13`
+* **@mxjs/app:** upgrade from `0.6.5` to `0.6.6`
+* **@mxjs/auth:** upgrade from `1.2.0` to `1.2.1`
+* **@mxjs/a-box:** upgrade from `1.1.0` to `1.1.1`
+* **@miaoxing/dev:** upgrade from `9.1.0` to `9.1.1`
+* **@mxjs/test:** upgrade from `1.0.10` to `1.0.11`
+
 ## [2.4.1](https://github.com/miaoxing/mxjs-a-page/compare/v2.4.0...v2.4.1) (2024-02-29)
 
 
