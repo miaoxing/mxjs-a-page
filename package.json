@@ -29,7 +29,7 @@
     "miaoxing": "^0.4.13",
     "@mxjs/app": "^0.6.6",
     "@mxjs/auth": "^1.2.1",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6",
     "@mxjs/a-box": "^1.1.1",
     "prop-types": "^15.7.2"
   },
