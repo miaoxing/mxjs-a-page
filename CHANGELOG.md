@@ -1,3 +1,25 @@
+# [3.0.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.5.0...v3.0.0) (2024-05-01)
+
+
+### Features
+
+* 更新 `react-router` 到 v6 ([aa76f3e](https://github.com/miaoxing/mxjs-a-page/commit/aa76f3e56f5cf8eb1d16f8ad98601678aa892551))
+
+
+### BREAKING CHANGES
+
+* 更新 `react-router` 到 v6
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.13` to `0.4.14`
+* **@mxjs/app:** upgrade from `0.6.6` to `0.7.0`
+* **@mxjs/test:** upgrade from `1.0.11` to `1.1.0`
+
 # [2.5.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.4.1...v2.5.0) (2024-03-31)
 
 
