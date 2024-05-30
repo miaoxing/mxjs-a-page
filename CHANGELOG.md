@@ -1,3 +1,15 @@
+## [3.0.1](https://github.com/miaoxing/mxjs-a-page/compare/v3.0.0...v3.0.1) (2024-05-30)
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.14` to `0.4.15`
+* **@mxjs/app:** upgrade from `0.7.0` to `0.8.0`
+* **@mxjs/test:** upgrade from `1.1.0` to `2.0.0`
+
 # [3.0.0](https://github.com/miaoxing/mxjs-a-page/compare/v2.5.0...v3.0.0) (2024-05-01)
 
 
