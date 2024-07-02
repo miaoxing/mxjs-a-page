@@ -1,4 +1,11 @@
-export Page from './Page';
-export PageContext from './PageContext';
-export PageActions from './PageActions';
-export { matchMenus } from './menus';
+import Page from './Page';
+import PageContext from './PageContext';
+import PageActions from './PageActions';
+import { matchMenus } from './menus';
+
+export {
+  Page,
+  PageContext,
+  PageActions,
+  matchMenus,
+};
