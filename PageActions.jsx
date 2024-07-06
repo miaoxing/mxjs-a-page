@@ -1,24 +1,21 @@
 import PropTypes from 'prop-types';
-import { Box } from '@mxjs/a-box';
+import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
-const PageActions = ({children, ...props}) => {
+const PageActions = ({className, children, ...props}) => {
   return (
-    <Box
-      mb={4} pb={4} borderBottom="1px dotted" borderColor="gray.200" display="flex" gap={2}
-      sx={{
-        // @experimental
-        '&:empty': {
-          display: 'none',
-        },
-      }}
+    <div
+      // @experimental empty:hidden
+      className={twMerge(clsx('mb-4 pb-4 border-b border-dotted border-gray-200 flex gap-2 empty:hidden', className))}
       {...props}
     >
       {children}
-    </Box>
+    </div>
   );
 };
 
 PageActions.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
 };
 

@@ -1,6 +1,5 @@
 import $ from 'miaoxing';
 import { useState, useEffect } from 'react';
-import { Box } from '@mxjs/a-box';
 import { Breadcrumb as AntdBreadcrumb } from 'antd';
 import { useLocation, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -61,21 +60,21 @@ const Breadcrumb = () => {
 
   // 异步加载时先占好位置
   return (
-    <Box as={AntdBreadcrumb} items={items} itemRender={itemRender} minH="22px"/>
+    <AntdBreadcrumb items={items} itemRender={itemRender} className="min-h-[22px] mb-4"/>
   );
 };
 
 const Page = ({raw, breadcrumb, ...props}) => {
   return (
-    <Box display="flex" gap={4} flexDirection="column">
+    <div className="flex gap-4 flex-col">
       {renderBreadcrumb(breadcrumb)}
       {
         raw ? props.children :
-          <Box p={4} bg="white" rounded="lg" {...props}>
+          <div className="p-4 bg-white rounded-lg" {...props}>
             {props.children}
-          </Box>
+          </div>
       }
-    </Box>
+    </div>
   );
 };
 

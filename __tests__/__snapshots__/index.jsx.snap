@@ -3,15 +3,15 @@
 exports[`Page basic 1`] = `
 <div>
   <div
-    class="css-1tp04pv"
+    class="flex gap-4 flex-col"
   >
     <nav
-      class="ant-breadcrumb css-yc5e1l"
+      class="ant-breadcrumb min-h-[22px] mb-4"
     >
       <ol />
     </nav>
     <div
-      class="css-t54a73"
+      class="p-4 bg-white rounded-lg"
     />
   </div>
 </div>
@@ -20,10 +20,10 @@ exports[`Page basic 1`] = `
 exports[`Page breadcrumb match menu 1`] = `
 <div>
   <div
-    class="css-1tp04pv"
+    class="flex gap-4 flex-col"
   >
     <nav
-      class="ant-breadcrumb css-yc5e1l"
+      class="ant-breadcrumb min-h-[22px] mb-4"
     >
       <ol>
         <li>
@@ -58,7 +58,7 @@ exports[`Page breadcrumb match menu 1`] = `
       </ol>
     </nav>
     <div
-      class="css-t54a73"
+      class="p-4 bg-white rounded-lg"
     />
   </div>
 </div>
@@ -67,15 +67,16 @@ exports[`Page breadcrumb match menu 1`] = `
 exports[`Page page with css props 1`] = `
 <div>
   <div
-    class="css-1tp04pv"
+    class="flex gap-4 flex-col"
   >
     <nav
-      class="ant-breadcrumb css-yc5e1l"
+      class="ant-breadcrumb min-h-[22px] mb-4"
     >
       <ol />
     </nav>
     <div
-      class="css-x5jnlo"
+      class="p-4 bg-white rounded-lg"
+      mb="2"
     />
   </div>
 </div>
