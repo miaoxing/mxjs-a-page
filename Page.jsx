@@ -64,23 +64,17 @@ const Breadcrumb = () => {
   );
 };
 
-const Page = ({raw, breadcrumb, ...props}) => {
+const Page = ({ breadcrumb, children, ...props }) => {
   return (
-    <div className="flex gap-4 flex-col">
+    <div {...props}>
       {renderBreadcrumb(breadcrumb)}
-      {
-        raw ? props.children :
-          <div className="p-4 bg-white rounded-lg" {...props}>
-            {props.children}
-          </div>
-      }
+      {children}
     </div>
   );
 };
 
 Page.propTypes = {
   breadcrumb: PropTypes.node,
-  raw: PropTypes.bool,
   children: PropTypes.node,
 };
 
