@@ -6,7 +6,7 @@ const PageActions = ({className, children, ...props}) => {
   return (
     <div
       // @experimental empty:hidden
-      className={twMerge(clsx('mb-4 flex gap-2 empty:hidden', className))}
+      className={twMerge(clsx('mb-6 flex gap-2 empty:hidden', className))}
       {...props}
     >
       {children}

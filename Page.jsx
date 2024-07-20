@@ -60,7 +60,7 @@ const Breadcrumb = () => {
 
   // 异步加载时先占好位置
   return (
-    <AntdBreadcrumb items={items} itemRender={itemRender} className="min-h-[22px] mb-4"/>
+    <AntdBreadcrumb items={items} itemRender={itemRender} className="min-h-[22px] mb-6"/>
   );
 };
 
