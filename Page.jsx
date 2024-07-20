@@ -1,10 +1,11 @@
 import $ from 'miaoxing';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { Breadcrumb as AntdBreadcrumb } from 'antd';
 import { useLocation, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { usePageContext } from './PageContext';
 import { matchMenus } from './menus';
+import { PageLoading } from '@mxjs/a-loading';
 
 const hasVar = (path) => {
   return path.includes('[');
@@ -66,10 +67,12 @@ const Breadcrumb = () => {
 
 const Page = ({ breadcrumb, children, ...props }) => {
   return (
-    <div {...props}>
-      {renderBreadcrumb(breadcrumb)}
-      {children}
-    </div>
+    <Suspense fallback={<PageLoading/>}>
+      <div {...props}>
+        {renderBreadcrumb(breadcrumb)}
+        {children}
+      </div>
+    </Suspense>
   );
 };
 
