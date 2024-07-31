@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-page",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/miaoxing/miaoxing#readme",
@@ -26,19 +26,19 @@
   },
   "dependencies": {
     "antd": "~5.13",
-    "miaoxing": "^0.4.15",
-    "@mxjs/app": "^0.8.0",
-    "@mxjs/auth": "^1.2.1",
+    "miaoxing": "^0.4.16",
+    "@mxjs/app": "^0.8.1",
+    "@mxjs/auth": "^1.2.2",
     "react-router-dom": "^6",
-    "@mxjs/a-loading": "^1.2.1",
+    "@mxjs/a-loading": "^2.0.0",
     "prop-types": "^15.7.2",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
-    "@miaoxing/dev": "^9.1.1",
+    "@miaoxing/dev": "^9.1.2",
     "@testing-library/react": "^14",
-    "@mxjs/test": "^2.0.0",
+    "@mxjs/test": "^2.0.1",
     "react": ">=16.13.1",
     "react-dom": ">=16.13.1"
   },

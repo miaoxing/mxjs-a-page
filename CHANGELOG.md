@@ -1,3 +1,38 @@
+# [4.0.0](https://github.com/miaoxing/mxjs-a-page/compare/v3.0.1...v4.0.0) (2024-07-31)
+
+
+### Bug Fixes
+
+* `export default from` 改为标准语法 ([73dd0d5](https://github.com/miaoxing/mxjs-a-page/commit/73dd0d5cd7ebe76156a131fe8843bde7b0d17620))
+
+
+### Features
+
+* **a-page:** `Page` 组件增加 `Suspense` 容器 ([8dca00e](https://github.com/miaoxing/mxjs-a-page/commit/8dca00e670740fd9f131084a7502adc5f0c61d55))
+* **a-page:** 使用 Tailwind CSS 调整 Page 组件样式 ([2a09bb1](https://github.com/miaoxing/mxjs-a-page/commit/2a09bb15182e3a42b9322ef33aeba312dea770f4))
+* **a-page:** 移除 `raw` 属性，页面默认改为无背景 ([32c0b80](https://github.com/miaoxing/mxjs-a-page/commit/32c0b80fa1b00bb65a0ca582b28ba8fb272efe22))
+* **a-page:** 调整 breadcrumb 和 page actions 的下边距 ([7af44eb](https://github.com/miaoxing/mxjs-a-page/commit/7af44eb899ca155bc84cee2e44d6a571580967fe))
+* **page:** `PageActions` 改为无底部边框 ([a494bb2](https://github.com/miaoxing/mxjs-a-page/commit/a494bb29e9f266f4d8288c2cff16ce32acdd2a88))
+
+
+### BREAKING CHANGES
+
+* **a-page:** 移除 `raw` 属性，页面默认改为无背景
+* **a-page:** 使用 Tailwind CSS 调整 Page 组件样式
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.15` to `0.4.16`
+* **@mxjs/app:** upgrade from `0.8.0` to `0.8.1`
+* **@mxjs/auth:** upgrade from `1.2.1` to `1.2.2`
+* **@mxjs/a-loading:** upgrade from `1.2.1` to `2.0.0`
+* **@miaoxing/dev:** upgrade from `9.1.1` to `9.1.2`
+* **@mxjs/test:** upgrade from `2.0.0` to `2.0.1`
+
 ## [3.0.1](https://github.com/miaoxing/mxjs-a-page/compare/v3.0.0...v3.0.1) (2024-05-30)
 
 
