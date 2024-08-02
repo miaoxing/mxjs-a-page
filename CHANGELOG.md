@@ -1,3 +1,14 @@
+## [4.0.1](https://github.com/miaoxing/mxjs-a-page/compare/v4.0.0...v4.0.1) (2024-08-02)
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.16` to `0.4.17`
+* **@mxjs/test:** upgrade from `2.0.1` to `2.0.2`
+
 # [4.0.0](https://github.com/miaoxing/mxjs-a-page/compare/v3.0.1...v4.0.0) (2024-07-31)
 
 
