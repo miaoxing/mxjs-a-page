@@ -4,7 +4,7 @@ exports[`Page basic 1`] = `
 <div>
   <div>
     <nav
-      class="ant-breadcrumb min-h-[22px] mb-4"
+      class="ant-breadcrumb min-h-[22px] mb-6"
     >
       <ol />
     </nav>
@@ -16,7 +16,7 @@ exports[`Page breadcrumb match menu 1`] = `
 <div>
   <div>
     <nav
-      class="ant-breadcrumb min-h-[22px] mb-4"
+      class="ant-breadcrumb min-h-[22px] mb-6"
     >
       <ol>
         <li>
@@ -60,7 +60,7 @@ exports[`Page page with css props 1`] = `
     mb="2"
   >
     <nav
-      class="ant-breadcrumb min-h-[22px] mb-4"
+      class="ant-breadcrumb min-h-[22px] mb-6"
     >
       <ol />
     </nav>
