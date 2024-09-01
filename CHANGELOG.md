@@ -1,3 +1,23 @@
+# [4.1.0](https://github.com/miaoxing/mxjs-a-page/compare/v4.0.2...v4.1.0) (2024-09-01)
+
+
+### Features
+
+* 更新 `antd` 到 `~5.19` ([66095be](https://github.com/miaoxing/mxjs-a-page/commit/66095be1cd9b6ee2bcec02ed8f92ad58c9dacffa))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.18` to `0.4.19`
+* **@mxjs/app:** upgrade from `0.8.2` to `0.8.3`
+* **@mxjs/auth:** upgrade from `1.2.3` to `1.2.4`
+* **@mxjs/a-loading:** upgrade from `2.0.1` to `2.0.2`
+* **@miaoxing/dev:** upgrade from `9.1.3` to `9.2.0`
+* **@mxjs/test:** upgrade from `2.0.3` to `2.0.4`
+
 ## [4.0.2](https://github.com/miaoxing/mxjs-a-page/compare/v4.0.1...v4.0.2) (2024-08-03)
 
 
