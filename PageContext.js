@@ -11,4 +11,4 @@ export default PageContext;
 /**
  * @experimental
  */
-export const usePageContext = () => useContext(PageContext);
+export const usePage = () => useContext(PageContext);

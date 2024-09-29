@@ -1,5 +1,5 @@
 import Page from './Page';
-import PageContext from './PageContext';
+import PageContext, { usePage } from './PageContext';
 import PageActions from './PageActions';
 import { matchMenus } from './menus';
 
@@ -8,4 +8,5 @@ export {
   PageContext,
   PageActions,
   matchMenus,
+  usePage,
 };

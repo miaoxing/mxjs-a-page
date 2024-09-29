@@ -3,7 +3,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { Breadcrumb as AntdBreadcrumb } from 'antd';
 import { useLocation, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { usePageContext } from './PageContext';
+import { usePage } from './PageContext';
 import { matchMenus } from './menus';
 import { PageLoading } from '@mxjs/a-loading';
 
@@ -39,7 +39,7 @@ function itemRender(item, params, items) {
 
 const Breadcrumb = () => {
   const [items, setItems] = useState([]);
-  const page = usePageContext();
+  const page = usePage();
   const location = useLocation();
 
   useEffect(() => {
