@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/miaoxing/mxjs-a-page/compare/v4.1.0...v4.2.0) (2024-09-30)
+
+
+### Features
+
+* **a-page:** 增加导出 `usePage` 钩子 ([f57037c](https://github.com/miaoxing/mxjs-a-page/commit/f57037ccf32c222ce698e4f1ad98781510cc5665))
+
 # [4.1.0](https://github.com/miaoxing/mxjs-a-page/compare/v4.0.2...v4.1.0) (2024-09-01)
 
 
