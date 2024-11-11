@@ -1,11 +1,12 @@
 import $ from 'miaoxing';
 import { useState, useEffect, Suspense } from 'react';
-import { Breadcrumb as AntdBreadcrumb } from 'antd';
+import { Breadcrumb as AntdBreadcrumb, Card } from 'antd';
 import { useLocation, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { usePage } from './PageContext';
 import { matchMenus } from './menus';
 import { PageLoading } from '@mxjs/a-loading';
+import { Ret } from '@mxjs/a-ret';
 
 const hasVar = (path) => {
   return path.includes('[');
@@ -65,12 +66,12 @@ const Breadcrumb = () => {
   );
 };
 
-const Page = ({ breadcrumb, children, ...props }) => {
+const Page = ({ breadcrumb, result, children, ...props }) => {
   return (
     <Suspense fallback={<PageLoading/>}>
       <div {...props}>
         {renderBreadcrumb(breadcrumb)}
-        {children}
+        {result ? <Ret result={result}>{children}</Ret> : children}
       </div>
     </Suspense>
   );
@@ -79,6 +80,7 @@ const Page = ({ breadcrumb, children, ...props }) => {
 Page.propTypes = {
   breadcrumb: PropTypes.node,
   children: PropTypes.node,
+  result: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default Page;
