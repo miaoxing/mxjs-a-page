@@ -1,3 +1,18 @@
+# [4.3.0](https://github.com/miaoxing/mxjs-a-page/compare/v4.2.1...v4.3.0) (2024-11-30)
+
+
+### Features
+
+* **a-page:** `Page` 组件支持传入 `result` 对象来显示加载中和错误状态 ([394656b](https://github.com/miaoxing/mxjs-a-page/commit/394656b43a305b2c173da937508f4b29b8d99601))
+
+
+
+
+
+### Dependencies
+
+* **@mxjs/a-ret:** upgrade from `2.1.1` to `2.2.0`
+
 ## [4.2.1](https://github.com/miaoxing/mxjs-a-page/compare/v4.2.0...v4.2.1) (2024-11-01)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-page",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "description": "> TODO: description",
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/miaoxing/miaoxing#readme",
@@ -31,7 +31,7 @@
     "@mxjs/auth": "^1.2.4",
     "react-router-dom": "^6",
     "@mxjs/a-loading": "^2.1.0",
-    "@mxjs/a-ret": "^2.1.1",
+    "@mxjs/a-ret": "^2.2.0",
     "prop-types": "^15.7.2",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0"
